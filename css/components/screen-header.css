@@ -1,0 +1,43 @@
+.screen-header {
+  margin-top: 24px;
+  padding: var(--horizontal-space);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.screen-header__title {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.screen-header__icons a {
+  color: black;
+  margin-left: 25px;
+  position: relative;
+}
+
+.screen-header__icons--notification {
+  background-color: tomato;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  position: absolute;
+  right: -4px;
+  top: -6px;
+}
+
+@keyframes cogSpin {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.screen-header__icons .fa-cog:hover {
+  animation: cogSpin 1s linear infinite;
+}
